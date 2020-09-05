@@ -21,7 +21,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<title>Case Study</title>
+	<title>Cancer Treatment Case Study</title>
 <body>
 	
 
@@ -30,7 +30,7 @@
 		<div class="col-md-8">
 			<div class="page-header">
 				<h1>
-					Cancer Treatment Case Study
+					Drug Regimens vs Tumor Volumes
 				</h1>
 			</div>
 		</div>
@@ -43,17 +43,21 @@
 					<a class="nav-link" href="comparison.html">Comparison</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link disabled" href="data.html">Data</a>
+					<a class="nav-link" href="data.html">Data</a>
 				</li>
 				<li class="nav-item dropdown ml-md-auto">
-					 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
+					<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-						 <a class="dropdown-item" href="visualizations/treatments.html">Treatments per Drug Regimen</a> 
-						 <a class="dropdown-item" href="visualizations/regression.html">Scatter Plot with Linear Regression</a>
-						 <a class="dropdown-item" href="visualizations/line-graph.html">Capomulin Regression</a>
-						 <a class="dropdown-item" href="visualizations/quartile.html">Box and Whisker Comparison</a>
+						<a class="dropdown-item" href="visualizations/treatments.html">Treatments per Drug Regimen</a> 
 						<div class="dropdown-divider">
-						</div> <a class="dropdown-item" href="#">Separated link</a>
+						</div> 
+						<a class="dropdown-item" href="visualizations/regression.html">Scatter Plot with Linear Regression</a>
+						<div class="dropdown-divider">
+						</div> 
+						<a class="dropdown-item" href="visualizations/line-graph.html">Capomulin Regression</a>
+						<div class="dropdown-divider">
+						</div> 
+						<a class="dropdown-item" href="visualizations/quartile.html">Box and Whisker Comparison</a>
 					</div>
 				</li>
 			</ul>
@@ -62,21 +66,32 @@
 	<div class="row">
 		<div class="col-md-8">
 			<p>
-				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+				The purporse of this project is to analyze and plot research data for new cancer treatment drugs. In this data set, 248 mice were used to analyze 10 drug regimens (incliuding a placebo). Four of the regimens were selected to summarize and plot the results of the research. The selected drug regimens are: Capomulin, Ramicane, Infubinol, and Ceftamin.
 			</p>
 			<blockquote class="blockquote">
 				<p class="mb-0">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-				</p>
+					I think mice are rather nice.
+					Their tails are long, their faces small
+					They haven’t any chins at all.
+					Their ears are pink, their teeth are white,
+					They run about the house all night.
+					
+					They nibble things they shouldn’t touch
+					And no one seems to like them much.
+					But I think mice are nice.				</p>
 				<footer class="blockquote-footer">
-					Someone famous in <cite>Source Title</cite>
+					Rose Fyleman<cite>, Poet and Author</cite>
 				</footer>
 			</blockquote>
 		</div>
 			<div class="col-md-4">
 				<h3>
-					h3. Lorem ipsum dolor sit amet.
-				</h3><img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" /><img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" /><img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" /><img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+					Visualizations
+				</h3>
+				<img alt="Drug Treatment Bar Chart" src="visualizations/drug_treatment_number.png" />
+				<img alt="Capomulin Regression Scatter Plot" src="visualizations/capomulin_regression.png" />
+				<img alt="Capomulin Regression Line Graph" src="visualizations/capomulin_line_graph.png" />
+				<img alt="Drug Comparison Box and Whisker Plot" src="visualizations/quartile_comparison.png" />
 			</div>
 		</div>
 	</div>
