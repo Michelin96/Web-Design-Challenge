@@ -1,3 +1,17 @@
+<!-- CSS code for the 2x2 vis grid-->
+<!--.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 1px;
+	grid-template-areas:
+	  ". ."
+	  ". .";
+  }-->
+
+<!-- HTML tag code for the 2x2 vis grid-->
+
+<!-- <div class="grid-container"></div> -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,56 +20,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<title>Case Study</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title>Cancer Treatment Case Study</title>
+</head>
 <body>
 	
-	<div class="container-fluid">
+
+<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8">
 			<div class="page-header">
 				<h1>
-					Cancer Treatment Case Study
+					Drug Regimens vs Tumor Volumes
 				</h1>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<ul class="nav">
 				<li class="nav-item">
-					<a class="nav-link active" href="../index.html">Home</a>
+					<a class="nav-link active" href="index.html">Synopsis</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="../comparison.html">Comparison</a>
+					<a class="nav-link" href="comparison.html">Comparison</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link disabled" href="../data.html">Data</a>
+					<a class="nav-link" href="data.html">Data</a>
 				</li>
 				<li class="nav-item dropdown ml-md-auto">
-					 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
+					
+					
+					<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-						 <a class="dropdown-item" href="visualizations/treatments.html">Treatments per Drug Regimen</a> 
-						 <a class="dropdown-item" href="visualizations/regression.html">Scatter Plot with Linear Regression</a>
-						 <a class="dropdown-item" href="visualizations/line-graph.html">Capomulin Regression</a>
-						 <a class="dropdown-item" href="visualizations/quartile.html">Box and Whisker Comparison</a>
+						<a class="dropdown-item" href="treatments.html">Treatments per Drug Regimen</a> 
 						<div class="dropdown-divider">
-						</div> <a class="dropdown-item" href="#">Separated link</a>
+						</div> 
+						<a class="dropdown-item" href="regression.html">Scatter Plot with Linear Regression</a>
+						<div class="dropdown-divider">
+						</div> 
+						<a class="dropdown-item" href="line-graph.html">Capomulin Regression</a>
+						<div class="dropdown-divider">
+						</div> 
+						<a class="dropdown-item" href="quartile.html">Box and Whisker Comparison</a>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<h3>
-				h3. Lorem ipsum dolor sit amet.
-			</h3>
-			<p>
-				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
-			</p><img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" /><img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" /><img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" /><img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+		<div class="row">
+			<div class="col-md-6">
+				<h3>
+					Comparing the Plots
+				</h3>
+				<a href="#">
+					<img class="img-fluid" alt="Drug Comparison Box and Whisker Plot" src="visualizations/quartile_comparison.png" />
+				</a>
+				</a>
+				</a>			
+				<p>
+					Put all four plots here and link back to the pages with with an explaination of the data.
+				</p>
+			</div>
+		
+			<div class="col-6 mb-3">
+				<h3>
+					Visualizations
+				</h3>
+					<div class="row">
+						<div class="col-6 mt-3 mb-4">
+							<a href="#">
+							<img class="img-fluid" alt="Number of Treatments per Drug Regimen" src="visualizations/drug_treatment_number.png" />
+							</a>
+						</div>				
+						<div class="col-6 mt-3 mb-4">
+							<a href="#">
+							<img class="img-fluid" alt="Capomulin Regression Scatter Plot" src="visualizations/capomulin_regression.png" />
+							</a>
+						</div>	
+
+					<div class="row">
+						<div class="col-6 mb-4">
+							<a href="#">
+							<img class="img-fluid" alt="Capomulin Regression Line Graph" src="visualizations/capomulin_line_graph.png" />
+							</a>
+						</div>				
+						<div class="col-6 mb-4">
+							<a href="#">
+							<img class="img-fluid" alt="Drug Comparison Box and Whisker Plot" src="visualizations/quartile_comparison.png" />
+							</a>
+						</div>	
+					</div>
+			</div>
 		</div>
 	</div>
 </div>
-
+	
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
