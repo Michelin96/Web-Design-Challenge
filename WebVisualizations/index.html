@@ -20,8 +20,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./reset.css"  /> 
+	<link rel="stylesheet" type="text/css" href="./styles.css"  /> 
 	<title>Cancer Treatment Case Study</title>
+</head>
 <body>
 	
 
@@ -37,7 +40,7 @@
 		<div class="col-md-4">
 			<ul class="nav">
 				<li class="nav-item">
-					<a class="nav-link active" href="index.html">Home</a>
+					<a class="nav-link active" href="index.html">Synopsis</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="comparison.html">Comparison</a>
@@ -46,6 +49,8 @@
 					<a class="nav-link" href="data.html">Data</a>
 				</li>
 				<li class="nav-item dropdown ml-md-auto">
+					
+					
 					<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 						<a class="dropdown-item" href="visualizations/treatments.html">Treatments per Drug Regimen</a> 
@@ -68,8 +73,8 @@
 			<p>
 				The purporse of this project is to analyze and plot research data for new cancer treatment drugs. In this data set, 248 mice were used to analyze 10 drug regimens (incliuding a placebo). Four of the regimens were selected to summarize and plot the results of the research. The selected drug regimens are: Capomulin, Ramicane, Infubinol, and Ceftamin.
 			</p>
+			<div class="col-md-12 mt-3">
 			<blockquote class="blockquote">
-				<p class="mb-0">
 					I think mice are rather nice.
 					Their tails are long, their faces small
 					They haven’t any chins at all.
@@ -78,20 +83,42 @@
 					
 					They nibble things they shouldn’t touch
 					And no one seems to like them much.
-					But I think mice are nice.				</p>
-				<footer class="blockquote-footer">
+					But I think mice are nice.
+				<footer class="blockquote-footer mt-2">
 					Rose Fyleman<cite>, Poet and Author</cite>
 				</footer>
 			</blockquote>
+			</div>
 		</div>
-			<div class="col-md-4">
+		
+			<div class="col-4 mb-3">
 				<h3>
 					Visualizations
 				</h3>
-				<img alt="Drug Treatment Bar Chart" src="visualizations/drug_treatment_number.png" />
-				<img alt="Capomulin Regression Scatter Plot" src="visualizations/capomulin_regression.png" />
-				<img alt="Capomulin Regression Line Graph" src="visualizations/capomulin_line_graph.png" />
-				<img alt="Drug Comparison Box and Whisker Plot" src="visualizations/quartile_comparison.png" />
+					<div class="row">
+						<div class="col-6 mt-3 mb-4">
+							<a href="#">
+							<img class="img-fluid" alt="Number of Treatments per Drug Regimen" src="visualizations/drug_treatment_number.png" />
+							</a>
+						</div>				
+						<div class="col-6 mt-3 mb-4">
+							<a href="#">
+							<img class="img-fluid" alt="Capomulin Regression Scatter Plot" src="visualizations/capomulin_regression.png" />
+							</a>
+						</div>	
+
+					<div class="row">
+						<div class="col-6 mb-4">
+							<a href="#">
+							<img class="img-fluid" alt="Capomulin Regression Line Graph" src="visualizations/capomulin_line_graph.png" />
+							</a>
+						</div>				
+						<div class="col-6 mb-4">
+							<a href="#">
+							<img class="img-fluid" alt="Drug Comparison Box and Whisker Plot" src="visualizations/quartile_comparison.png" />
+							</a>
+						</div>	
+					</div>
 			</div>
 		</div>
 	</div>
