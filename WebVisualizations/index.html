@@ -21,21 +21,23 @@
 
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+
 	<title>Cancer Treatment Case Study</title>
 </head>
 <body>
 	
 
-<div class="container-fluid">
+<div class="container-fluid p-4">
 	<div class="row">
-		<div class="col-md-8">
-			<div class="page-header">
+		<div class="col-md-6">
+			<div class="header">
 				<h1>
-					Drug Regimens vs Tumor Volumes
+					Drug Regimens vs <br>Tumor Volumes
 				</h1>
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-6">
 			<ul class="nav">
 				<li class="nav-item">
 					<a class="nav-link active" href="index.html">Synopsis</a>
@@ -47,7 +49,6 @@
 					<a class="nav-link" href="data.html">Data</a>
 				</li>
 				<li class="nav-item dropdown ml-md-auto">
-					
 					
 					<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
@@ -66,14 +67,16 @@
 			</ul>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-8">
+	<div class="row px-3">
+		<div class="col-md-8 shadow-sm p-3 mb-5 bg-blue rounded mr-0">
+			<h2>Synopsis</h2>
 			<p>
-				The purporse of this project is to analyze and plot research data for new cancer treatment drugs. In this data set, 248 mice were used to analyze 10 drug regimens (incliuding a placebo). Four of the regimens were selected to summarize and plot the results of the research. The selected drug regimens are: Capomulin, Ramicane, Infubinol, and Ceftamin.
+				The purporse of this project is to analyze and plot research data for new cancer treatment drugs. This study used two-hundred and forty-eight (248) mice, with a gender distribution 50.4% male and 49.6% female. Ten (10) cancer treatment drug regimens (incliuding a placebo) were analyzed. Four of the regimens were selected to summarize and plot the results of the research. The selected drug regimens are: Capomulin, Ramicane, Infubinol, and Ceftamin.
 			</p>
 			<div class="col-md-12 mt-3">
 			<blockquote class="blockquote">
-					I think mice are rather nice.
+				<p class="mb-0">
+					<small>I think mice are rather nice.
 					Their tails are long, their faces small
 					They haven’t any chins at all.
 					Their ears are pink, their teeth are white,
@@ -81,39 +84,40 @@
 					
 					They nibble things they shouldn’t touch
 					And no one seems to like them much.
-					But I think mice are nice.
-				<footer class="blockquote-footer mt-2">
+					But I think mice are nice.</small>
+				</p>
+				<footer class="blockquote-footer text-center">
 					Rose Fyleman<cite>, Poet and Author</cite>
 				</footer>
 			</blockquote>
 			</div>
 		</div>
 		
-			<div class="col-4 mb-3">
-				<h3>
+			<div class="col-4 mb-3 shadow-sm p-3 mb-5 bg-purple rounded">
+				<h2>
 					Visualizations
-				</h3>
-					<div class="row">
-						<div class="col-6 mt-3 mb-4">
-							<a href="#">
-							<img class="img-fluid" alt="Number of Treatments per Drug Regimen" src="visualizations/drug_treatment_number.png" />
+				</h2>
+					<div class="row px-2">
+						<div class="col-6">
+							<a href="treatments.html">
+							<img class="img-fluid shadow rounded mb-2" alt="Number of Treatments per Drug Regimen" src="visualizations/drug_treatment_number.jpg" />
 							</a>
 						</div>				
-						<div class="col-6 mt-3 mb-4">
-							<a href="#">
-							<img class="img-fluid" alt="Capomulin Regression Scatter Plot" src="visualizations/capomulin_regression.png" />
+						<div class="col-6">
+							<a href="regression.html">
+							<img class="img-fluid shadow rounded" alt="Capomulin Regression Scatter Plot" src="visualizations/capomulin_regression.jpg" />
 							</a>
 						</div>	
 
 					<div class="row">
-						<div class="col-6 mb-4">
-							<a href="#">
-							<img class="img-fluid" alt="Capomulin Regression Line Graph" src="visualizations/capomulin_line_graph.png" />
+						<div class="col-6">
+							<a href="line-graph.html">
+							<img class="img-fluid  shadow rounded" alt="Capomulin Regression Line Graph" src="visualizations/capomulin_line_graph.jpg" />
 							</a>
 						</div>				
-						<div class="col-6 mb-4">
-							<a href="#">
-							<img class="img-fluid" alt="Drug Comparison Box and Whisker Plot" src="visualizations/quartile_comparison.png" />
+						<div class="col-6 ">
+							<a href="quartile.html">
+							<img class="img-fluid  shadow rounded" alt="Drug Comparison Box and Whisker Plot" src="visualizations/quartile_comparison.jpg" />
 							</a>
 						</div>	
 					</div>
