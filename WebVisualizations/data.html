@@ -7,57 +7,61 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
 	<title>Cancer Treatment Case Study</title>
 <body>
 	
 
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-8">
-			<div class="page-header">
-				<h1>
-					Drug Regimens vs Tumor Volumes
-				</h1>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<ul class="nav">
-				<li class="nav-item">
-					<a class="nav-link active" href="index.html">Synopsis</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="comparison.html">Comparison</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="data.html">Data</a>
-				</li>
-				<li class="nav-item dropdown ml-md-auto">
-					<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="treatments.html">Treatments per Drug Regimen</a> 
-						<div class="dropdown-divider">
-						</div> 
-						<a class="dropdown-item" href="regression.html">Scatter Plot with Linear Regression</a>
-						<div class="dropdown-divider">
-						</div> 
-						<a class="dropdown-item" href="ine-graph.html">Capomulin Regression</a>
-						<div class="dropdown-divider">
-						</div> 
-						<a class="dropdown-item" href="quartile.html">Box and Whisker Comparison</a>
-					</div>
-				</li>
-			</ul>
+
+	<div class="container-fluid p-4">
+		<div class="row px-2 shadow-sm mx-1 bg-green rounded">
+				<div class="col-md-8 pt-3 header">
+					<h1>
+						Drug Regimens vs Tumor Volumes
+					</h1>
+				</div>
+				<div class="col-md-4">
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="index.html">Synopsis</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="comparison.html">Comparison</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="data.html">Data</a>
+					</li>
+					<li class="nav-item dropdown">
+						
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="treatments.html">Treatments per Drug Regimen</a> 
+							<div class="dropdown-divider">
+							</div> 
+							<a class="dropdown-item" href="regression.html">Scatter Plot with Linear Regression</a>
+							<div class="dropdown-divider">
+							</div> 
+							<a class="dropdown-item" href="line-graph.html">Capomulin Regression</a>
+							<div class="dropdown-divider">
+							</div> 
+							<a class="dropdown-item" href="quartile.html">Box and Whisker Comparison</a>
+						</div>
+					</li>
+				</ul>
+				</div>
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-md-12">
+<div class="container-fluid p-4">
+	<div class="row shadow-sm mx-1 bg-blue rounded">
+		<div class="col-md-12 pt-3">
 			<h3>
 				Data
 			</h3>
 			<p>
 				The following table includes all of the data used for this project.
 			</p>
+		</div>
 			<table class="table table-striped">
 				<thead>
 				  <tr style="text-align: left;">
