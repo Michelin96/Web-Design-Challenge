@@ -11,58 +11,57 @@
 	<title>Cancer Treatment Case Study</title>
 <body>
 	
-
-
-	<div class="container-fluid p-4">
-		<div class="row px-2 shadow-sm mx-1 bg-green rounded">
-				<div class="col-md-8 pt-3 header">
-					<h1>
-						Drug Regimens vs Tumor Volumes
-					</h1>
-				</div>
-				<div class="col-md-4">
-				<ul class="nav">
-					<li class="nav-item">
-						<a class="nav-link active" href="index.html">Synopsis</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="comparison.html">Comparison</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="data.html">Data</a>
-					</li>
-					<li class="nav-item dropdown">
-						
-						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="treatments.html">Treatments per Drug Regimen</a> 
-							<div class="dropdown-divider">
-							</div> 
-							<a class="dropdown-item" href="regression.html">Scatter Plot with Linear Regression</a>
-							<div class="dropdown-divider">
-							</div> 
-							<a class="dropdown-item" href="line-graph.html">Capomulin Regression</a>
-							<div class="dropdown-divider">
-							</div> 
-							<a class="dropdown-item" href="quartile.html">Box and Whisker Comparison</a>
-						</div>
-					</li>
-				</ul>
-				</div>
+<!-- Navigation Bar -->
+<div class="container-fluid p-4">
+	<div class="row px-2 shadow-sm mx-1 bg-green rounded">
+		<div class="col-md-8 pt-3 header">
+			<h1>
+				<a class="nav-link active" href="index.html">Cancer Treatment Case Study</a>
+			</h1>
+		</div>
+		<div class="col-md-4">
+			<ul class="nav">
+				<li class="nav-item">
+					<a class="nav-link active" href="index.html">Synopsis</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="comparison.html">Comparison</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="data.html">Data</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="treatments.html">Treatments per Drug Regimen</a> 
+						<div class="dropdown-divider">
+						</div> 
+						<a class="dropdown-item" href="regression.html">Scatter Plot with Linear Regression</a>
+						<div class="dropdown-divider">
+						</div> 
+						<a class="dropdown-item" href="line-graph.html">Capomulin Regression</a>
+						<div class="dropdown-divider">
+						</div> 
+						<a class="dropdown-item" href="quartile.html">Box and Whisker Comparison</a>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
+</div>
 
-<div class="container-fluid p-4">
+<!-- Main Content with Data Table -->
+<div class="container-fluid px-4">
 	<div class="row shadow-sm mx-1 bg-blue rounded">
 		<div class="col-md-12 pt-3">
-			<h3>
+			<h2>
 				Data
-			</h3>
+			</h2>
 			<p>
 				The following table includes all of the data used for this project.
 			</p>
-		</div>
-			<table class="table table-striped">
+
+			<table class="table table-striped table-responsive">
 				<thead>
 				  <tr style="text-align: left;">
 					<th></th>
