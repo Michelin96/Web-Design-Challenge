@@ -1,17 +1,4 @@
-<!-- CSS code for the 2x2 vis grid-->
-<!--.grid-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	gap: 1px 1px;
-	grid-template-areas:
-	  ". ."
-	  ". .";
-  }-->
 
-<!-- HTML tag code for the 2x2 vis grid-->
-
-<!-- <div class="grid-container"></div> -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,19 +8,18 @@
 
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
 	<title>Cancer Treatment Case Study</title>
 </head>
 <body>
 	
-
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-8">
-			<div class="page-header">
-				<h1>
-					Drug Regimens vs Tumor Volumes
-				</h1>
-			</div>
+<!-- Navigation Bar -->
+<div class="container-fluid p-4">
+	<div class="row px-2 shadow-sm mx-1 bg-green rounded">
+		<div class="col-md-8 pt-3 header">
+			<h1>
+				<a class="nav-link active" href="index.html">Cancer Treatment Case Study</a>
+			</h1>
 		</div>
 		<div class="col-md-4">
 			<ul class="nav">
@@ -46,9 +32,7 @@
 				<li class="nav-item">
 					<a class="nav-link" href="data.html">Data</a>
 				</li>
-				<li class="nav-item dropdown ml-md-auto">
-					
-					
+				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 						<a class="dropdown-item" href="treatments.html">Treatments per Drug Regimen</a> 
@@ -66,54 +50,46 @@
 			</ul>
 		</div>
 	</div>
-		<div class="row">
-			<div class="col-md-6">
-				<h3>
-					Comparing the Plots
-				</h3>
-				<a href="#">
-					<img class="img-fluid" alt="Drug Comparison Box and Whisker Plot" src="visualizations/quartile_comparison.png" />
-				</a>
-				</a>
-				</a>			
-				<p>
-					Put all four plots here and link back to the pages with with an explaination of the data.
-				</p>
-			</div>
-		
-			<div class="col-6 mb-3">
-				<h3>
-					Visualizations
-				</h3>
-					<div class="row">
-						<div class="col-6 mt-3 mb-4">
-							<a href="#">
-							<img class="img-fluid" alt="Number of Treatments per Drug Regimen" src="visualizations/drug_treatment_number.png" />
-							</a>
-						</div>				
-						<div class="col-6 mt-3 mb-4">
-							<a href="#">
-							<img class="img-fluid" alt="Capomulin Regression Scatter Plot" src="visualizations/capomulin_regression.png" />
-							</a>
-						</div>	
-
-					<div class="row">
-						<div class="col-6 mb-4">
-							<a href="#">
-							<img class="img-fluid" alt="Capomulin Regression Line Graph" src="visualizations/capomulin_line_graph.png" />
-							</a>
-						</div>				
-						<div class="col-6 mb-4">
-							<a href="#">
-							<img class="img-fluid" alt="Drug Comparison Box and Whisker Plot" src="visualizations/quartile_comparison.png" />
-							</a>
-						</div>	
-					</div>
-			</div>
-		</div>
-	</div>
 </div>
-	
+
+
+<!--Main Content -->
+<div class="container-fluid px-4 ">
+	<div class="row px-3">
+		<div class="col-md-12 shadow-sm p-3 bg-blue rounded">
+			<h2>
+				Comparing the Plots
+			</h2>
+				<p>Click on a plot for an indepth explaination of the analysis.</p>
+
+			<div class="row px-3">
+				<div class="col-md-6 mb-4">
+					<a href="treatments.html">
+						<img class="img-fluid w-100 shadow rounded" alt="Number of Treatments per Drug Regimen" src="visualizations/drug_treatment_number.png" />
+					</a>
+				</div>	
+				<div class="col-md-6 mb-4">
+					<a href="regression.html">
+						<img class="img-fluid w-100 shadow rounded" alt="Capomulin Regression Scatter Plot" src="visualizations/capomulin_regression.png" />
+					</a>
+				</div>
+			</div>
+			<div class="row px-3">
+				<div class="col-md-6 mb-4">
+					<a href="line-graph.html">
+						<img class="img-fluid w-100 shadow rounded" alt="Capomulin Regression Line Graph" src="visualizations/capomulin_line_graph.png" />
+					</a>
+				</div>				
+				<div class="col-md-6 mb-4">
+					<a href="quartile.html">
+						<img class="img-fluid w-100 shadow rounded" alt="Drug Comparison Box and Whisker Plot" src="visualizations/quartile_comparison.png" />
+					</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>	
+
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
