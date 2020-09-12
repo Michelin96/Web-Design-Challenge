@@ -13,47 +13,47 @@
 </head>
 <body>
 
+<!-- Navigation Bar -->
 <div class="container-fluid p-4">
-	<div class="row px-2 shadow-sm mx-1 bg-green rounded">
-			<div class="col-md-8 pt-3 header">
-				<h1>
-					Drug Regimens vs Tumor Volumes
-				</h1>
-			</div>
-			<div class="col-md-4">
-			<ul class="nav">
+    <div class="row px-2 shadow-sm mx-1 bg-green rounded">
+        <nav class="navbar navbar-expand-lg navbar-light bg-green">
+            <a class="navbar-brand" href="index.html">Cancer Treatment Case Study</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link active" href="index.html">Synopsis</a>
+					<a class="nav-link" href="index.html"">Synopsis<span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="comparison.html">Comparison</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="data.html">Data</a>
-				</li>
-				<li class="nav-item dropdown">
-					
-					<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="treatments.html">Treatments per Drug Regimen</a> 
-						<div class="dropdown-divider">
-						</div> 
-						<a class="dropdown-item" href="regression.html">Scatter Plot with Linear Regression</a>
-						<div class="dropdown-divider">
-						</div> 
-						<a class="dropdown-item" href="line-graph.html">Capomulin Regression</a>
-						<div class="dropdown-divider">
-						</div> 
-						<a class="dropdown-item" href="quartile.html">Box and Whisker Comparison</a>
-					</div>
-				</li>
-			</ul>
-			</div>
-	
-	</div>
+                <li class="nav-item">
+                  <a class="nav-link" href="comparison.html"">Comparison<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="data.html">Data</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="treatments.html">Treatments per Drug Regimen</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="regression.html">Scatter Plot with Linear Regression</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="line-graph.html">Capomulin Regression</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="quartile.html">Box and Whisker Comparison</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>    
 </div>
 
-<div class="container-fluid p-4">
+<!-- Main Content -->
+<div class="container-fluid px-4">
 	<div class="row px-3">
 		<div class="col-md-8 shadow-sm p-3 bg-blue rounded">
 			<h2>Synopsis</h2>
@@ -64,13 +64,13 @@
 			<blockquote class="blockquote px-1 shadow rounded bg-ltblue">
 				<p class="mb-0">
 					<small>I think mice are rather nice.
-					Their tails are long, their faces small
+					Their tails are long, their faces small.
 					They haven’t any chins at all.
 					Their ears are pink, their teeth are white,
-					They run about the house all night.
+					they run about the house all night.
 					
-					They nibble things they shouldn’t touch
-					And no one seems to like them much.
+					They nibble things they shouldn’t touch,
+					and no one seems to like them much.
 					But I think mice are nice.</small>
 				</p>
 				<footer class="blockquote-footer text-center">
@@ -79,31 +79,34 @@
 			</blockquote>
 			</div>
 		</div>
-			<div class="col-4 shadow-sm p-3 bg-purple rounded">
+
+		   <!--Side Bar -->
+			<div class="col-md-4 shadow-sm p-3 bg-purple rounded">
 				<h2>
 					Visualizations
 				</h2>
+
 					<div class="row px-2">
-						<div class="col-6">
+						<div class="col-md-6 mb-4">
 							<a href="treatments.html">
-							<img class="img-fluid shadow rounded mb-2" alt="Number of Treatments per Drug Regimen" src="visualizations/drug_treatment_number.jpg" />
+							<img class="img-fluid w-100 shadow rounded mb-2" alt="Number of Treatments per Drug Regimen" src="visualizations/drug_treatment_number.png" />
 							</a>
 						</div>				
-						<div class="col-6">
+						<div class="col-md-6 mb-4">
 							<a href="regression.html">
-							<img class="img-fluid shadow rounded" alt="Capomulin Regression Scatter Plot" src="visualizations/capomulin_regression.jpg" />
+							<img class="img-fluid w-100 shadow rounded" alt="Capomulin Regression Scatter Plot" src="visualizations/capomulin_regression.png" />
 							</a>
 						</div>	
 
-					<div class="row">
-						<div class="col-6">
+					<div class="row px-2">
+						<div class="col-md-6 mb-4">
 							<a href="line-graph.html">
-							<img class="img-fluid  shadow rounded" alt="Capomulin Regression Line Graph" src="visualizations/capomulin_line_graph.jpg" />
+							<img class="img-fluid w-100 shadow rounded" alt="Capomulin Regression Line Graph" src="visualizations/capomulin_line_graph.png" />
 							</a>
 						</div>				
-						<div class="col-6 ">
+						<div class="col-md-6 mb-4">
 							<a href="quartile.html">
-							<img class="img-fluid  shadow rounded" alt="Drug Comparison Box and Whisker Plot" src="visualizations/quartile_comparison.jpg" />
+							<img class="img-fluid w-100 shadow rounded" alt="Drug Comparison Box and Whisker Plot" src="visualizations/quartile_comparison.png" />
 							</a>
 						</div>	
 					</div>

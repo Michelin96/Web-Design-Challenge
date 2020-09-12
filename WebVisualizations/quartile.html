@@ -26,44 +26,43 @@
 <body>
 	
 
-<!--Navigation Bar-->
+<!-- Navigation Bar -->
 <div class="container-fluid p-4">
-	<div class="row px-2 shadow-sm mx-1 bg-green rounded">
-		<div class="col-md-8 pt-3 header">
-			<h1>
-				<a class="nav-link active" href="index.html">Cancer Treatment Case Study</a>
-			</h1>
-		</div>
-		<div class="col-md-4">
-			<ul class="nav">
+    <div class="row px-2 shadow-sm mx-1 bg-green rounded">
+        <nav class="navbar navbar-expand-lg navbar-light bg-green">
+            <a class="navbar-brand" href="index.html">Cancer Treatment Case Study</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link active" href="index.html">Synopsis</a>
+					<a class="nav-link" href="index.html"">Synopsis<span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="comparison.html">Comparison</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="data.html">Data</a>
-				</li>
-				<li class="nav-item dropdown">
-					
-					<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="treatments.html">Treatments per Drug Regimen</a> 
-						<div class="dropdown-divider">
-						</div> 
-						<a class="dropdown-item" href="regression.html">Scatter Plot with Linear Regression</a>
-						<div class="dropdown-divider">
-						</div> 
-						<a class="dropdown-item" href="line-graph.html">Capomulin Regression</a>
-						<div class="dropdown-divider">
-						</div> 
-						<a class="dropdown-item" href="quartile.html">Box and Whisker Comparison</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
+                <li class="nav-item">
+                  <a class="nav-link" href="comparison.html"">Comparison<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="data.html">Data</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="treatments.html">Treatments per Drug Regimen</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="regression.html">Scatter Plot with Linear Regression</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="line-graph.html">Capomulin Regression</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="quartile.html">Box and Whisker Comparison</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>    
 </div>
 
 <!-- Main Content -->
